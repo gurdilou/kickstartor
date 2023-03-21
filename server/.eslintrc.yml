@@ -1,0 +1,23 @@
+root: true
+parser: "@typescript-eslint/parser"
+env:
+  node: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+plugins:
+  - "@typescript-eslint"
+rules:
+  multiline-comment-style:
+    - error
+    - starred-block
+  curly: error
+  quote-props:
+    - error
+    - as-needed
+  no-trailing-spaces: warn
+  object-shorthand: warn
+  prefer-const:
+    - error
+    - destructuring: all
+      ignoreReadBeforeAssign: false
